@@ -9,7 +9,11 @@ const TONES = {
   success: { box: "bg-success-100", text: "text-success-700", icon: colors.success[700] },
   danger: { box: "bg-danger-100", text: "text-danger-600", icon: colors.danger[600] },
   neutral: { box: "bg-surface", text: "text-ink-soft", icon: colors.ink.soft },
-  solid: { box: "bg-brand-600", text: "text-white", icon: "#FFFFFF" },
+    solid: {
+        box: "bg-brand-600",
+        text: "text-contrast",
+        icon: "contrast",
+    },
 };
 
 export function Badge({ label, tone = "info", icon, className }) {

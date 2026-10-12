@@ -4,7 +4,7 @@ import { IconTile } from "@/components/ui/IconTile";
 import { cn } from "@/lib/cn";
 
 const BADGES = {
-  pdf: { label: "PDF", box: "bg-danger-600" },
+    pdf: { label: "PDF", box: "bg-red-700" },
   zip: { label: "ZIP", box: "bg-slate-600" },
 };
 

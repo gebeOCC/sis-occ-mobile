@@ -35,7 +35,7 @@ export function HomeHeader({ student, hasUnread }) {
         >
           <Icon name="bell" size={24} color={colors.ink.soft} />
           {hasUnread ? (
-            <View className="absolute right-2 top-2 h-2.5 w-2.5 rounded-full border-2 border-white bg-danger-500" />
+                      <View className="absolute right-2 top-2 h-2.5 w-2.5 rounded-full border-2 border-background bg-danger-500" />
           ) : null}
         </Pressable>
       </View>

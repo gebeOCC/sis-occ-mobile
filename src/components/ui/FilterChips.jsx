@@ -25,7 +25,7 @@ export function FilterChips({ options, value, onChange, scrollable = false, size
           className={cn(
             "font-semibold",
             size === "sm" ? "text-[13px]" : "text-[14px]",
-            active ? "text-white" : "text-ink-soft",
+              active ? "text-contrast" : "text-ink-soft",
           )}
         >
           {option.label}

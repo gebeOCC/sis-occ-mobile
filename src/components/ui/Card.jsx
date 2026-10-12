@@ -2,7 +2,7 @@ import { Pressable, View } from "react-native";
 import { cn } from "@/lib/cn";
 
 const TONES = {
-  default: "border-line bg-white shadow-sm",
+    default: "border-line bg-card shadow-sm",
   highlight: "border-brand-200 bg-brand-50",
 };
 

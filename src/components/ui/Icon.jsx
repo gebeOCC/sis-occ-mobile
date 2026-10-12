@@ -32,6 +32,7 @@ import {
   X,
 } from "lucide-react-native";
 import colors from "@/theme/colors";
+import { useAppTheme } from "@/theme/ThemeProvider";
 
 // One place to map semantic names to glyphs. Swap the icon set here and nothing else changes.
 const ICONS = {
@@ -69,7 +70,20 @@ const ICONS = {
   eyeOff: EyeOff,
 };
 
-export function Icon({ name, size = 20, color = colors.brand[600], strokeWidth = 2 }) {
-  const Glyph = ICONS[name];
-  return <Glyph size={size} color={color} strokeWidth={strokeWidth} />;
+export function Icon({
+    name,
+    size = 20,
+    color = colors.brand[600],
+    strokeWidth = 2,
+}) {
+    const { resolveColor } = useAppTheme();
+    const Glyph = ICONS[name];
+
+    return (
+        <Glyph
+            size={size}
+            color={resolveColor(color)}
+            strokeWidth={strokeWidth}
+        />
+    );
 }

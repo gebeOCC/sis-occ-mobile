@@ -9,7 +9,7 @@ export function AppHeader({ title, subtitle }) {
   const goBack = () => (router.canGoBack() ? router.back() : router.replace("/"));
 
   return (
-    <View className="items-center justify-center border-b border-line bg-white px-14 pb-3 pt-2">
+      <View className="items-center justify-center border-b border-line bg-card px-14 pb-3 pt-2">
       <View className="absolute inset-y-0 left-3 justify-center">
         <Pressable
           onPress={goBack}
