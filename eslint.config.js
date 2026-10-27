@@ -5,7 +5,7 @@ module.exports = defineConfig([
   expoConfig,
   {
     rules: {
-      // "@/..." resolves to ./src (jsconfig.json). Metro validates these at bundle time.
+      // "@/..." resolves to ./src (tsconfig.json). Metro validates these at bundle time.
       "import/no-unresolved": ["error", { ignore: ["^@/"] }],
     },
   },

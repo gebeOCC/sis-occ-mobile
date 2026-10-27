@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { attendanceStatus, summarizeAttendance } from "../src/lib/attendance.js";
-import { calculateTermGrade, gradeEquivalent } from "../src/lib/grades.js";
-import { summarizeTasks } from "../src/lib/taskSummary.js";
+import { attendanceStatus, summarizeAttendance } from "../src/features/classes/attendance.ts";
+import { calculateTermGrade, gradeEquivalent } from "../src/features/classes/grades.ts";
+import { summarizeTasks } from "../src/features/assignments/taskSummary.ts";
 import {
   getAssignment,
   getAssignments,
@@ -11,7 +11,7 @@ import {
   getAttendance,
   getGrades,
   submitAssignment,
-} from "../src/mocks/db.js";
+} from "../src/mocks/db.ts";
 
 const now = new Date("2026-10-12T12:00:00");
 const task = (id, dueAt, status = "not_submitted") => ({ id, dueAt, status });
